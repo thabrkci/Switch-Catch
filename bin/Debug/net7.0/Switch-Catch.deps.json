@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Switch-Catch/1.0.0": {
+        "runtime": {
+          "Switch-Catch.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Switch-Catch/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

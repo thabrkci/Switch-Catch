@@ -1,5 +1,5 @@
 Herkese selam,
-Switch-Catch kullanımıda dair çok küçük bir örnekle bilgimizi tazelemiş olalım.
+Switch-Catch kullanımına dair çok küçük bir örnekle bilgimizi tazelemiş olalım.
 Yorum satırlarında gerekli açıklamaları bulabilirsiniz.
 Değerli vaktinizi harcadığınız için teşekkür ederim.
 ---------------------------------------------------

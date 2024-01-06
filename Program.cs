@@ -1,35 +1,40 @@
-﻿// See https://aka.ms/new-console-template for more information
-int month = DateTime.Now.Month;
+﻿using System;
 
-//Expression Switch-Case deyimi if-else deyimleri gibi karar kontrol yapılarıdır. 
-//Switch-Case ifadeleri yapabileceğiniz her şeyi if-else blokları ile de yapabiliriz. 
-//Bir ifade üç veya daha fazla koşula göre ayrıştırıldığında genel olarak if-else'e ,
-//alternatif olarak switch case kullanılır.
-switch (month)
+class Program
 {
-    case 10://
-    Console.WriteLine("Ekim ayındasınız!");//
-        break;
-    default:
-    Console.WriteLine("Yanlış tarihi girdiniz!");//Case'de 10.ay değilde 2.ay olmuş olsaydı bu hata ile 
-    //karşılaşılacaktı.
-        break;
+    static void Main(string[] args)
+    {
+        // Get the current month from the system clock
+        int month = DateTime.Now.Month;
 
+        // Expression Switch-Case statements are decision control structures, similar to if-else statements.
+        // Switch-Case statements are generally used when an expression needs to be evaluated against three or more conditions.
+        // Although you can achieve the same with if-else blocks, Switch-Case provides a cleaner alternative.
 
+        // Example of a simple Switch-Case statement
+        switch (month)
+        {
+            case 10:
+                Console.WriteLine("You are in the month of October!");
+                break;
+            default:
+                Console.WriteLine("You entered an incorrect month!");
+                break;
+        }
 
-       
+        // Example of a Switch-Case statement with multiple cases falling through
+        switch (month)
+        {
+            // If the month is October, November, or December, the following messages will be displayed.
+            case 10:
+            case 11:
+            case 12:
+                Console.WriteLine("You are in the autumn season!");
+                Console.WriteLine("Take care not to catch a cold :)");
+                break;
+            default:
+                // This block is executed if none of the specified cases match the current month.
+                break;
+        }
+    }
 }
-
-
-switch (month)
-{
-    case 10://Birden fazla case yazdırma örneği 10 11 ve 12 aylarda isek otomatik olarak alltaki mesaj alınır
-    case 11:
-    case 12:
-    Console.WriteLine("Sonbahar ayındasınız!");
-    Console.WriteLine("Aman hasta olmayın :)");
-        break;
-    default:
-        break;
-}
-
